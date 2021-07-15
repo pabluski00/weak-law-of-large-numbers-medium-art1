@@ -1,7 +1,7 @@
 ### P. KOWALSKI KUTZ
 ### 2021 / 07 / 15
 ### ART1
-### WEAK LAW OF LARGE NUMBERS 
+### WEAK LAW OF LARGE NUMBERS (WLLN)
 
 ################################################################################
 set.seed(123)
