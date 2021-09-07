@@ -4,6 +4,27 @@
 ### WEAK LAW OF LARGE NUMBERS (WLLN)
 
 ################################################################################
+##########################       DICE           ################################
+set.seed(123)
+dice <- 1:5000
+sample_mean <- 1:5000
+
+for (i in 1:5000) {
+  dice[i] <- sample(x = 1:6, size = 1)
+}
+
+for (j in 1:5000) {
+  sample_mean[j] <- mean(dice[1:j])
+}
+
+plot(sample_mean,
+     main="Sample means of 5000 dice samples",
+     ylim=c(1,6),
+     xlab="n", ylab="Sample means", pch=19, col="navy blue", cex=0.5)
+abline(h=3.5, col="red")
+
+
+################################################################################
 set.seed(123)
 ##### Generating 5000 random uniform observations 
 uniform_observations <- runif(5000, 0, 1)
